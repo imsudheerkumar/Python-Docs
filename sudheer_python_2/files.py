@@ -1,11 +1,11 @@
-f=open("C:\\python\\file.txt","r+")
-res=f.readlines()
-print(res)
-y={}
-i=0
-for x in res:
-    y=x.strip()
-    i=i+1
+f=open("C://python//example.txt","r")
+f2=open("C://python//example2.txt","w")
+for line in f:
+    tokens=line.split(' ')
+    res=f2.write("word count : "+ str(len(tokens))+ line)
 
 
-print(y)
+f.close()
+f2.close()
+
+    
